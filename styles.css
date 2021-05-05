@@ -258,7 +258,7 @@ body{
     margin: 0;
 }
 .black-ball-div {
-    width: 30%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -296,13 +296,6 @@ body{
     color: #7690c5;
     text-align: center;
     padding-left: 70px;
-}
-.black-ball-div {
-    width: 30%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: center;
 }
 .black-ball-div {
     width: 30%;
