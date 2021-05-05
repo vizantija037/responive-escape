@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     margin: 0;
@@ -21,9 +22,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*background-color: grey;*/
-    padding: 30px 0;
-    
+    background-color: transparent;
+    padding: 30px 0;  
 }
 .logo-bar{
     width: 25%;
@@ -71,7 +71,7 @@ body{
     text-align: center;
 }
 .menu-bar li:hover {
-    background-color: #333232;
+    background-color: #5a5959;
     
 }
 
@@ -428,8 +428,16 @@ body{
     margin: 5px 0 10px 0;
 }
 .team-member img {
-    padding-left: 15px;
+    padding: 5px;
+    
+    -webkit-transition: all 0.25s ease;
 }
+.team-member img:hover {
+    background-color: #7690c5;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
 .team-footer {  
     width: 100%;
 
@@ -554,7 +562,28 @@ div h3 {
     padding-bottom: 0;
 }
 
-
+.button-top{
+    font-size: 16px;
+    letter-spacing: 2px;
+    width: 50px;
+    height: 50px;
+    background-color: #3c3c3c;
+    border: none;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 2vw;
+    left: 82vw;
+    z-index: 1;
+    color: white;
+    -webkit-transition: all 0.25s ease;
+    display: block;
+}
+.button-top:hover{
+    background-color: #a5a1a1;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #000000;
+}
 
 /*responsive - 1200*/
 @media (max-width: 1200px) {
@@ -641,8 +670,13 @@ div h3 {
 }  
 }
 
-
-
+/* responsive - 1500*/
+@media (max-width: 1500px) {
+.button-top{
+    bottom: 2vw;
+    left: 94vw;
+}
+}
 
 
 
@@ -766,10 +800,11 @@ div h3 {
     padding-top: 10px;
     
 }
+.button-top{
+    bottom: 2vw;
+    left: 48vw;
 }
-
-
-
+}
 
 
 

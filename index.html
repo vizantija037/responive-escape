@@ -16,7 +16,12 @@
 
 <body>
     <div class="body-container">
+        <a href="#home">
+            <button class="button-top">Top</button>
+        </a>    
+        <a id="home">
         <div class="section-1">
+            
             <div class="nav-bar">
                 <div class="logo-bar">
                     <img src="Img/Escape.png">
@@ -28,19 +33,16 @@
                 </div>
 
                 <div class="menu-bar">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Clients</a></li>
-                        <li><a href="#">Contact</a></li>
-
-
-
+                    <ul id="click-control">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#clients">Clients</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>        
-
             </div>
+            
             <div class="info-home-container">
                 <h1>
                 Can you build the website of my dreams?
@@ -51,7 +53,9 @@
                 <button type="submit">Learn More
                 </button>
             </div>
-        </div> 
+        </div>
+        </a>
+        <a id="services">
         <div class="section-2">
             <div class="web-development">
                 <h1>Web <span>Development</span></h1>
@@ -110,6 +114,8 @@
                 </p>
             </div>
         </div>
+        </a>
+        <a id="clients">
         <div class="section-5">
             <div class="clients-heding">
                 <h1>Awesome <span>Clients</span>
@@ -140,6 +146,8 @@
                 
             </div>
         </div>
+        </a>
+        <a id="team">
         <div class="section-6">
             <div class="team-heding">
                 <h1>Amaizing <span>Team</span>
@@ -177,6 +185,8 @@
                 <p>Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt proin iaculis.</p>
             </div>
         </div>
+        </a>
+        <a id="contact">
         <div class="section-7">
             <div class="contact-info">
                 <h1>Say <span>Hello</span></h1>
@@ -208,15 +218,16 @@
                 </div>
             </div>
             <div class="contact-form">
-                <form action="">
-                  <input type="text">
-                  <input type="email">
-                  <textarea cols="30" rows="5"></textarea>
-                  <button type="submit">Submit</button>
+                <form action="" id="form">
+                  <input type="text" id="insert-name">
+                  <input type="email" id="insert-mail">
+                  <textarea cols="30" rows="5" id="insert-message"></textarea>
+                  <button type="submit" id="submit">Submit</button>
                 </form>
             </div>
             <h3>© 2021 Responsive - Escape by Budimir • Made In Krusevac</h3>
-        </div>   
+        </div> 
+        </a>    
             
     </div>
     
