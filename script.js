@@ -1,5 +1,5 @@
-window.onload= function () {
-    window.scrollTo(0, 0);
+window.onload = function () {
+    window.scrollTo(0,0);
 };
 
 const burgerButton = document.getElementsByClassName('burger')[0];
@@ -32,13 +32,4 @@ function validateMessage(e){
         alert('\nMessage NOT sent!!!\n\nFill in all the fields in the contact form!');   
         
 }}
-    
-const topButton = document.getElementById("button-top");
-
-window.onscroll = function() {
-    scrollFunction()
-};
-
-
-
     
